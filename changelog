@@ -1,4 +1,16 @@
-commit 6c69b8747d47c7cf88e3a36e187d477868874565 (HEAD, origin/master, origin/HEAD, master)
+commit d69d9fbe5cba73e37149f7646da360ca656d7ff2 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Feb 24 18:49:33 2016 -0430
+
+    * se agregan algunos mensajes para hacerlo mas facil de usar
+
+commit 03df8df9e581bba9b2ae896464c636fa60b120b7 (tag: v0.4)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Jan 31 22:44:14 2016 -0430
+
+    * changelog
+
+commit 6c69b8747d47c7cf88e3a36e187d477868874565
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Jan 31 22:43:13 2016 -0430
 
