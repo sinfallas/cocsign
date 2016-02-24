@@ -37,12 +37,13 @@ case "$1" in
 
 	gpg)
 		check
+		echo -e "\e[00;1;92mRealizando limpieza\e[00m"
 		rm -f /tmp/genkey
 		rm -f /tmp/listo
 		rm -f /tmp/descifrado
 		rm -f "$HOME"/correo.gpg
 		if ! [[ -f "$HOME"/"$minombre" ]]; then
-			echo -e "\e[00;1;92mDescargando codigo de conducta.\e[00m"
+			echo -e "\e[00;1;92mDescargando el texto del codigo de conducta.\e[00m"
 			wget -v -O "$HOME"/"$minombre" https://launchpad.net/codeofconduct/2.0/+download
 			echo ""
 			echo -e "\e[00;1;92mDescarga finalizada.\e[00m"
