@@ -8,7 +8,6 @@ function pause() {
 	read -p "$*"
 }
 
-
 function check () {
 	clear
 	if [[ "$EUID" = "0" ]]; then
@@ -123,7 +122,7 @@ case "$1" in
 		echo -e "\e[00;1;92mLLave SSH generada.\e[00m"
 		cat "$HOME"/.ssh/id_rsa.pub | xclip -selection c
 		echo ""
-		echo "Su llave SSH  esta almacenada temporalmente en el portapapeles."
+		echo "Su llave SSH esta almacenada temporalmente en el portapapeles."
 		echo ""
 		echo "1.- Vaya a launchpad.net y haga clic en: ssh keys"
 		echo ""
