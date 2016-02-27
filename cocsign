@@ -22,7 +22,7 @@ function check () {
 
 function parame () {
 	if ! [[ -z $2 ]]; then
-		echo -e "\e[00;31mERROR: Se insertaron Parametros innecesarios.\e[00m"
+		echo -e "\e[00;31mERROR: Se insertaron parametros innecesarios.\e[00m"
 		exit 1
 	fi
 }
