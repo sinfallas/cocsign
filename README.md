@@ -21,7 +21,7 @@ cocsign instalar|gpg|ssh nombre apellido tu@correo.com
 
 Ejemplos:
 
-* instalar
+* instalar (como root)
 ```bash
 ./cocsign instalar
 ```
