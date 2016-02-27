@@ -13,7 +13,7 @@ Basado en código de Eduardo Echeverria <echevemaster@gmail.com>
 * Jesus Palencia <sinfallas@gmail.com>
 * Hector Mantellini <xombra.com@gmail.com>
 
-uso:
+Uso:
 
 ```bash
 cocsign instalar|gpg|ssh nombre apellido tu@correo.com
@@ -23,15 +23,15 @@ Ejemplos:
 
 * instalar
 ```bash
-cocsign instalar
+./cocsign instalar
 ```
 
 * gpg
 ```bash
-cocsign gpg nombre apellido tu@correo.com
+./cocsign gpg nombre apellido tu@correo.com
 ```
 
 * ssh
 ```bash
-cocsign ssh
+./cocsign ssh
 ```
