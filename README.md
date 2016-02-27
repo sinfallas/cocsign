@@ -18,3 +18,20 @@ uso:
 ```bash
 cocsign instalar|gpg|ssh nombre apellido tu@correo.com
 ```
+
+Ejemplos:
+
+* instalar
+```bash
+cocsign instalar
+```
+
+* gpg
+```bash
+cocsign gpg nombre apellido tu@correo.com
+```
+
+* ssh
+```bash
+cocsign ssh
+```
