@@ -1,4 +1,23 @@
-commit 85a85f62cd4eb4f5559aa941fa42fd1241d10af2 (HEAD, origin/master, origin/HEAD, master)
+commit 642021ad6087a2342802a0d84213247123e43238 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Fri Feb 26 19:54:45 2016 -0430
+
+    * se mejora la documentacion
+
+commit 76fe307bf2857b3d7b39ae7b5d5d22ab36ed8ef5
+Author: jose perez <sinfallas@gmail.com>
+Date:   Fri Feb 26 19:52:15 2016 -0430
+
+    * se corrigen errores
+    * se coloca una validacion de parametros
+
+commit 515b7b173e0a97efbff943fc31b5260458854ebf
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Feb 24 19:03:34 2016 -0430
+
+    * changelog
+
+commit 85a85f62cd4eb4f5559aa941fa42fd1241d10af2
 Author: jose perez <sinfallas@gmail.com>
 Date:   Wed Feb 24 19:02:44 2016 -0430
 
