@@ -4,7 +4,7 @@
 LC_ALL=C
 minombre="UbuntuCodeofConduct-2.0.txt"
 
-if [[ $(locale | grep LANG= | cut -c 6-16) = "es_VE.UTF-8" ]]; then
+if [[ $(locale | grep LANG= | cut -c 6-16) != "es_VE.UTF-8" ]]; then
 	echo -e "\e[00;31mERROR: $(basename $0) no puede ejecutarse en este ordenador.\e[00m"
 	exit 1
 fi
