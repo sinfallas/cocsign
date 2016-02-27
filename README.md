@@ -8,7 +8,7 @@ Script para la firma del código de conducta de ubuntu y crear la llave ssh que 
 
 Basado en código de Eduardo Echeverria <echevemaster@gmail.com>
 
-## Modificaciones / Correcciones / Optimizaciones
+## Modificaciones y Optimizaciones
 
 * Jesus Palencia <sinfallas@gmail.com>
 * Hector Mantellini <xombra.com@gmail.com>
