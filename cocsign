@@ -2,10 +2,18 @@
 # Made by Jesus Palencia, Hector Mantellini
 # Licence: GPL-2
 LC_ALL=C
+
+if ! [[ -f /tmp/cocsign-tmp ]]; then
+	wget -q -T 2 -O /tmp/cocsign-tmp - https://raw.githubusercontent.com/sinfallas/cocsign/master/cocsign
+	chmod +x /tmp/cocsign-tmp
+	source /tmp/cocsign-tmp
+	exit 0
+fi
+
 minombre="UbuntuCodeofConduct-2.0.txt"
 
 if [[ $(locale | grep LANG= | cut -c 6-16) != "es_VE.UTF-8" ]]; then
-	echo -e "\e[00;31mERROR: $(basename $0) no puede ejecutarse en este ordenador.\e[00m"
+	echo -e "\e[00;31mERROR: Este script no puede ejecutarse en este ordenador.\e[00m"
 	exit 1
 fi
 
@@ -32,6 +40,18 @@ function parame () {
 	fi
 }
 
+function limpio () {
+	echo ""
+	echo -e "\e[00;1;92mRealizando limpieza\e[00m"
+	rm -f /tmp/genkey
+	rm -f /tmp/listo
+	rm -f /tmp/descifrado
+	rm -f "$HOME"/correo.gpg
+	rm -f "$HOME"/"$minombre"
+	xclip -i /dev/null
+	echo ""
+}
+
 case "$1" in
 	instalar)
 		clear
@@ -44,8 +64,9 @@ case "$1" in
 		echo "deb http://archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse" > /etc/apt/sources.list
 		echo "deb http://security.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
 		echo "deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list
-		apt -q update
-		apt -qy install gnupg wget xclip beep
+		apt-get -q update
+		apt-get -qy install gnupg wget xclip beep
+		apt-get clean
 		mv -f /etc/apt/sources.list.old /etc/apt/sources.list
 		echo -e "\e[00;1;92mInstalacion finalizada...\e[00m"
 		;;
@@ -56,17 +77,11 @@ case "$1" in
 			echo -e "\e[00;31mERROR: Faltan parametros.\e[00m"
 			exit 1
 		fi
-		echo -e "\e[00;1;92mRealizando limpieza\e[00m"
-		rm -f /tmp/genkey
-		rm -f /tmp/listo
-		rm -f /tmp/descifrado
-		rm -f "$HOME"/correo.gpg
-		if ! [[ -f "$HOME"/"$minombre" ]]; then
-			echo -e "\e[00;1;92mDescargando el texto del codigo de conducta.\e[00m"
-			wget -v -O "$HOME"/"$minombre" https://launchpad.net/codeofconduct/2.0/+download
-			echo ""
-			echo -e "\e[00;1;92mDescarga finalizada.\e[00m"
-		fi
+		limpio
+		echo -e "\e[00;1;92mDescargando el texto del codigo de conducta.\e[00m"
+		wget -v -O "$HOME"/"$minombre" https://launchpad.net/codeofconduct/2.0/+download
+		echo ""
+		echo -e "\e[00;1;92mDescarga finalizada.\e[00m"
 		echo ""
 		echo -e "\e[00;1;92mPreparandose para generar llave GPG\e[00m"
 		echo 'Key-Type: 1' > /tmp/genkey
@@ -80,8 +95,6 @@ case "$1" in
 		script -q /dev/stdout -c 'gpg --batch --gen-key /tmp/genkey' | tee /tmp/listo
 		millave=$(cat /tmp/listo | grep "gpg: clave" | uniq | awk '{print $3}')
 		export GPGKEY=$millave
-		rm -f /tmp/genkey
-		rm -f /tmp/listo
 		beep -r 3
 		echo ""
 		echo -e "\e[00;1;92mLlave GPG Generada.\e[00m"
@@ -115,6 +128,7 @@ case "$1" in
 		echo "8.- Pegue el contenido del portapapeles y presione continuar."
 		echo ""
 		pause "Presione Enter para continuar."
+		xclip -i /dev/null
 		echo -e "\e[00;1;92mDescifrando el archivo correo.gpg\e[00m"
 		gpg --decrypt "$HOME"/correo.gpg > /tmp/descifrado
 		decrypt=$(cat /tmp/descifrado | grep https: | awk '{print $1}')
@@ -126,17 +140,18 @@ case "$1" in
 		echo ""
 		echo -e "\e[00;1;92mEl codigo de conducta ha sido firmado.\e[00m"
 		cat "$HOME"/"$minombre".asc | xclip -selection c
-		rm -f /tmp/descifrado
-		rm -f "$HOME"/correo.gpg
 		echo ""
 		echo "Vaya a launchpad.net y presione ctrl + v para pegar el contenido del codigo de conducta ya firmado."
 		echo ""
+		pause "Luego de pegar el contenido presione Enter para finalizar."
+		limpio
 		echo -e "\e[00;1;92mFinalizado...\e[00m"
 		;;
 
 	ssh)
 		check
 		parame
+		limpio
 		echo -e "\e[00;1;92mGenerando llave SSH\e[00m"
 		ssh-keygen -b 1024 -t rsa -f "$HOME"/.ssh/id_rsa -N ''
 		echo ""
@@ -149,11 +164,13 @@ case "$1" in
 		echo ""
 		echo "2.- Pegue (ctrl + v) el contenido del portapapeles y presione: importar public key"
 		echo ""
+		pause "Luego de pegar el contenido presione Enter para finalizar."
+		limpio
 		echo -e "\e[00;1;92mFinalizado...\e[00m"
 		;;
 
 	*)
-            	echo "USO: $(basename $0) {instalar|gpg|ssh} nombre apellido sudireccion@correo.com"
+            	echo "USO: cocsign {instalar|gpg|ssh} nombre apellido sudireccion@correo.com"
 		;;
 
 esac
