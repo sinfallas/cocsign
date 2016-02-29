@@ -1,4 +1,16 @@
-commit 457055369b81080d20bc6ae80de73d24f363be26 (HEAD, origin/master, origin/HEAD, master)
+commit 685c57aefdae87c54dd239120903041b22dd25b4 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Feb 28 20:14:01 2016 -0430
+
+    * se corrige un error al pasar las variables posicionales al nuevo script
+
+commit 86a702566af3ee108f7dce8c1dc5e7d19917b5d1
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Feb 28 20:01:56 2016 -0430
+
+    * changelog
+
+commit 457055369b81080d20bc6ae80de73d24f363be26
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Feb 28 20:01:24 2016 -0430
 
