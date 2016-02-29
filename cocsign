@@ -33,13 +33,6 @@ function check () {
 	fi
 }
 
-function parame () {
-	if ! [[ -z $2 ]]; then
-		echo -e "\e[00;31mERROR: Se insertaron parametros innecesarios.\e[00m"
-		exit 1
-	fi
-}
-
 function limpio () {
 	echo ""
 	echo -e "\e[00;1;92mRealizando limpieza\e[00m"
@@ -50,6 +43,13 @@ function limpio () {
 	rm -f "$HOME"/"$minombre"
 	xclip -i /dev/null
 	echo ""
+}
+
+function parame () {
+	if ! [[ -z $2 ]]; then
+		echo -e "\e[00;31mERROR: Se insertaron parametros innecesarios.\e[00m"
+		exit 1
+	fi
 }
 
 case "$1" in
