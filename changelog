@@ -1,4 +1,18 @@
-commit d6b795f05b7491420e3fb471caa24979c4399ba3 (HEAD, origin/master, origin/HEAD, master)
+commit e2eb484eb96d7aacb2bada3dc4ab46ee259e57f8 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Feb 28 19:50:00 2016 -0430
+
+    * se crea la rutina de actualizacion automatica
+    * se crea la funcion limpio para eliminar material residual sensible
+    * se simplifica el script
+
+commit b2692d7a80823d622bc0b8dc749e4c1c52e1ec7a
+Author: jose perez <sinfallas@gmail.com>
+Date:   Fri Feb 26 20:35:32 2016 -0430
+
+    * changelog
+
+commit d6b795f05b7491420e3fb471caa24979c4399ba3
 Author: jose perez <sinfallas@gmail.com>
 Date:   Fri Feb 26 20:34:48 2016 -0430
 
