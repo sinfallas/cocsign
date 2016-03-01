@@ -3,12 +3,12 @@
 # Licence: GPL-2
 LC_ALL=C
 
-if ! [[ -f /tmp/cocsign-tmp ]]; then
-	wget -q -T 2 -O /tmp/cocsign-tmp - https://raw.githubusercontent.com/sinfallas/cocsign/master/cocsign
-	chmod +x /tmp/cocsign-tmp
-	source /tmp/cocsign-tmp $1 $2 $3 $4
-	exit 0
-fi
+#if ! [[ -f /tmp/cocsign-tmp ]]; then
+#	wget -q -T 2 -O /tmp/cocsign-tmp - https://raw.githubusercontent.com/sinfallas/cocsign/master/cocsign
+#	chmod +x /tmp/cocsign-tmp
+#	source /tmp/cocsign-tmp $1 $2 $3 $4
+#	exit 0
+#fi
 
 minombre="UbuntuCodeofConduct-2.0.txt"
 
