@@ -1,4 +1,16 @@
-commit 075049ad0ee79f5d5d848996b197eb3f268dab8c (HEAD, origin/master, origin/HEAD, master)
+commit baae8862c9981f1faf24beef4cdfc7e62d72f89c (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Mar 8 12:59:57 2016 -0430
+
+    * se agrega trap
+
+commit e91d2b0344ace292e789a470aaff41ed159d0eab
+Author: jose perez <sinfallas@gmail.com>
+Date:   Mon Feb 29 20:38:08 2016 -0430
+
+    * changelog
+
+commit 075049ad0ee79f5d5d848996b197eb3f268dab8c
 Author: jose perez <sinfallas@gmail.com>
 Date:   Mon Feb 29 20:37:56 2016 -0430
 
@@ -16,7 +28,7 @@ Date:   Mon Feb 29 20:08:36 2016 -0430
 
     * bugfix
 
-commit b59603550d6de10c93bdaca39e180f9ba815c6b6
+commit b59603550d6de10c93bdaca39e180f9ba815c6b6 (tag: v0.6.2)
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Feb 28 20:14:28 2016 -0430
 
@@ -28,7 +40,7 @@ Date:   Sun Feb 28 20:14:01 2016 -0430
 
     * se corrige un error al pasar las variables posicionales al nuevo script
 
-commit 86a702566af3ee108f7dce8c1dc5e7d19917b5d1
+commit 86a702566af3ee108f7dce8c1dc5e7d19917b5d1 (tag: v0.6.1)
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Feb 28 20:01:56 2016 -0430
 
@@ -40,7 +52,7 @@ Date:   Sun Feb 28 20:01:24 2016 -0430
 
     * bugfix
 
-commit 9487d034a969f296c80d81d2131fe7a570c29925
+commit 9487d034a969f296c80d81d2131fe7a570c29925 (tag: v0.6)
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Feb 28 19:51:21 2016 -0430
 
@@ -54,7 +66,7 @@ Date:   Sun Feb 28 19:50:00 2016 -0430
     * se crea la funcion limpio para eliminar material residual sensible
     * se simplifica el script
 
-commit b2692d7a80823d622bc0b8dc749e4c1c52e1ec7a
+commit b2692d7a80823d622bc0b8dc749e4c1c52e1ec7a (tag: v0.5.1)
 Author: jose perez <sinfallas@gmail.com>
 Date:   Fri Feb 26 20:35:32 2016 -0430
 
@@ -90,7 +102,7 @@ Date:   Fri Feb 26 20:14:10 2016 -0430
 
     * bugfix
 
-commit 705e39594d0582d7298414a5611ba378385a4abb
+commit 705e39594d0582d7298414a5611ba378385a4abb (tag: v0.5)
 Author: jose perez <sinfallas@gmail.com>
 Date:   Fri Feb 26 20:00:57 2016 -0430
 
