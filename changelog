@@ -1,4 +1,16 @@
-commit baae8862c9981f1faf24beef4cdfc7e62d72f89c (HEAD, origin/master, origin/HEAD, master)
+commit 4a800a80abd756be1bfce079f34e6ebb5bdeb719 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Mar 24 00:38:26 2016 -0430
+
+    * se agrega un campo complementario al crear la llave gpg
+
+commit acd05b8822fa9265cd4d9e1bfe5bdf59bc5470a9
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Mar 8 13:00:12 2016 -0430
+
+    * changelog
+
+commit baae8862c9981f1faf24beef4cdfc7e62d72f89c
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Mar 8 12:59:57 2016 -0430
 
