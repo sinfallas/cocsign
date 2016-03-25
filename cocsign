@@ -59,10 +59,11 @@ case "$1" in
 			echo -e "\e[00;31mERROR: Debe ser root.\e[00m"
 			malo
 		fi
+		ver=$(lsb_release -c | awk '{print $2}')
 		cp /etc/apt/sources.list /etc/apt/sources.list.old
-		echo "deb http://archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse" > /etc/apt/sources.list
-		echo "deb http://security.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
-		echo "deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list
+		echo "deb http://archive.ubuntu.com/ubuntu/ $ver main restricted universe multiverse" > /etc/apt/sources.list
+		echo "deb http://security.ubuntu.com/ubuntu/ $ver-security main restricted universe multiverse" >> /etc/apt/sources.list
+		echo "deb http://archive.ubuntu.com/ubuntu/ $ver-updates main restricted universe multiverse" >> /etc/apt/sources.list
 		apt-get -q update
 		apt-get -qy install gnupg wget xclip beep
 		apt-get clean
