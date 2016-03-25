@@ -1,4 +1,16 @@
-commit bbd2b4d7603d4c3d9c6e93175b3540d29e054b8a (HEAD, origin/master, origin/HEAD, master)
+commit e99e37bac055124973ecd88510db33909d6e8673 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Fri Mar 25 14:42:54 2016 -0430
+
+    * se corrige un error al firmar con clearsign
+
+commit 4e19a0a59b4e992f7e2d7bd6640a04b48aec1612
+Author: jose perez <sinfallas@gmail.com>
+Date:   Fri Mar 25 11:50:52 2016 -0430
+
+    * changelog
+
+commit bbd2b4d7603d4c3d9c6e93175b3540d29e054b8a
 Author: jose perez <sinfallas@gmail.com>
 Date:   Fri Mar 25 11:50:00 2016 -0430
 
