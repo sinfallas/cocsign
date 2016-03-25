@@ -2,8 +2,6 @@
 # Made by Jesus Palencia, Hector Mantellini
 # Licence: GPL-2
 LC_ALL=C
-trap "rm -f /run/$(basename $0).pid; exit" 0 1 2 3 15
-echo "$BASHPID" > /run/$(basename $0).pid
 
 minombre="UbuntuCodeofConduct-2.0.txt"
 
@@ -176,5 +174,4 @@ case "$1" in
 		;;
 
 esac
-rm -f /run/$(basename $0).pid
 exit 0
