@@ -1,4 +1,16 @@
-commit e99e37bac055124973ecd88510db33909d6e8673 (HEAD, origin/master, origin/HEAD, master)
+commit aaac103d7ca66fe49c047ad64c18a34032ab8a4b (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Fri Mar 25 14:51:40 2016 -0430
+
+    * se agrega una variable para detectar el codename de Ubuntu y escribir el sources.list correctamente
+
+commit 06bf03e665170ae1a20e8077c397ee931b2e6921
+Author: jose perez <sinfallas@gmail.com>
+Date:   Fri Mar 25 14:43:38 2016 -0430
+
+    * changelog
+
+commit e99e37bac055124973ecd88510db33909d6e8673
 Author: jose perez <sinfallas@gmail.com>
 Date:   Fri Mar 25 14:42:54 2016 -0430
 
