@@ -99,7 +99,7 @@ case "$1" in
 		beep -r 3
 		echo ""
 		echo -e "\e[00;1;92mLlave GPG Generada.\e[00m"
-		gpg --send-keys --keyserver keyserver.ubuntu.com $millave
+		gpg --keyserver keyserver.ubuntu.com --send-keys $millave
 		echo ""
 		echo -e "\e[00;1;92mSe envio al keyserver de Ubuntu la siguiente llave: $millave\e[00m"
 		mihuella=$(gpg --fingerprint $millave | grep "Huella de clave" | cut -c 25-74)
