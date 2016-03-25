@@ -136,7 +136,7 @@ case "$1" in
 		pause "Presione Enter para continuar."
 		echo ""
 		echo -e "\e[00;1;92mSe firmara el codigo de conducta.\e[00m"
-		gpg --clearsign "$HOME"/"$minombre"
+		gpg --clearsign -u $millave "$HOME"/"$minombre"
 		echo ""
 		echo -e "\e[00;1;92mEl codigo de conducta ha sido firmado.\e[00m"
 		cat "$HOME"/"$minombre".asc | xclip -selection c
