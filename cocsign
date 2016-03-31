@@ -88,7 +88,7 @@ case "$1" in
 		echo 'Subkey-Type: 1' >> /tmp/genkey
 		echo 'Subkey-Length: 2048' >> /tmp/genkey
 		echo 'Name-Real:' $2 $3 >> /tmp/genkey
-		echo 'Name-Comment: No comment' >> /tmp/genkey
+		# echo 'Name-Comment: No comment' >> /tmp/genkey
 		echo 'Name-Email:' $4 >> /tmp/genkey
 		echo 'Expire-Date: 2y' >> /tmp/genkey
 		echo -e "\e[00;1;92mGenerando llave GPG\e[00m"
