@@ -1,4 +1,16 @@
-commit 956fe0587aca7ac389ce7f791853e886d02e2243 (HEAD, origin/master, origin/HEAD, master)
+commit b70d4e152821f95197f529b3f7b4d72d2cbc1b80 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Mar 31 18:06:00 2016 -0430
+
+    * se comenta una linea innecesaria
+
+commit 5c33a42e79ec9185646931d4bb7d880ff9fb50d9
+Author: jose perez <sinfallas@gmail.com>
+Date:   Mon Mar 28 14:15:49 2016 -0430
+
+    * changelog
+
+commit 956fe0587aca7ac389ce7f791853e886d02e2243
 Author: jose perez <sinfallas@gmail.com>
 Date:   Mon Mar 28 14:15:22 2016 -0430
 
