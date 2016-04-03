@@ -1,4 +1,22 @@
-commit b70d4e152821f95197f529b3f7b4d72d2cbc1b80 (HEAD, origin/master, origin/HEAD, master)
+commit 47506d2bf37fa89074cfe5b80d63a159617dbdab (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 19:59:41 2016 -0430
+
+    * se cambia la longitud de la llave para hacerla mas segura
+
+commit 2383a1570a45d104976fcb2a078950d16091cd95
+Author: Jose Perez <sinfallas@users.noreply.github.com>
+Date:   Fri Apr 1 11:38:02 2016 -0430
+
+    Update cocsign
+
+commit 567c72a4a594db49973fe4bbe3c0a8d6877af7f4
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Mar 31 18:06:51 2016 -0430
+
+    * changelog
+
+commit b70d4e152821f95197f529b3f7b4d72d2cbc1b80
 Author: jose perez <sinfallas@gmail.com>
 Date:   Thu Mar 31 18:06:00 2016 -0430
 
