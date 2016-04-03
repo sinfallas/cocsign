@@ -11,8 +11,10 @@ function malo() {
 }
 
 if [[ $(locale | grep LANG= | cut -d "=" -f2) != "es_VE.UTF-8" ]]; then
-	echo -e "\e[00;31mERROR: Este script no puede ejecutarse en este ordenador por no estar configurado el locale correcto.\e[00m"
-	malo
+	if [[ $(locale | grep LANG= | cut -d "=" -f2) != "es_ES.UTF-8" ]]; then
+		echo -e "\e[00;31mERROR: Este script no puede ejecutarse en este ordenador por no estar configurado el locale correcto.\e[00m"
+		malo
+	fi
 fi
 
 function pause() {
