@@ -1,4 +1,16 @@
-commit 47506d2bf37fa89074cfe5b80d63a159617dbdab (HEAD, origin/master, origin/HEAD, master)
+commit 5b9c52cc4fd2411a074c4bd824f14f3802ce3cb7 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 21:55:38 2016 -0430
+
+    * se agrega una segunda comprobacion de locale
+
+commit ff78a22cf3d616b22830e2f75c22e1a68f3197c0
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 20:00:18 2016 -0430
+
+    * changelog
+
+commit 47506d2bf37fa89074cfe5b80d63a159617dbdab
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Apr 2 19:59:41 2016 -0430
 
