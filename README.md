@@ -2,7 +2,8 @@
 
 [![GitHub license](https://sinfallas.files.wordpress.com/2016/02/gpl.png)](https://github.com/sinfallas/cocsign/blob/master/LICENSE)
 [![DOI](https://zenodo.org/badge/4102/sinfallas/cocsign.svg)](https://zenodo.org/badge/latestdoi/4102/sinfallas/cocsign)
-[![Build Status](https://travis-ci.org/sinfallas/calc-mem.svg?branch=master)](https://travis-ci.org/sinfallas/calc-mem)
+[![Build Status](https://travis-ci.org/sinfallas/cocsign.svg?branch=master)](https://travis-ci.org/sinfallas/cocsign)
+
 
 Script para la firma del código de conducta de ubuntu y crear la llave ssh que se utilizara en launchpad.net
 
