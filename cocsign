@@ -27,7 +27,7 @@ function check () {
 		echo -e "\e[00;31mERROR: No debe ser root.\e[00m"
 		malo
 	fi
-	if ! [[ -f /usr/bin/xclip ]]; then
+	if ! [[ -f /usr/bin/xclip ]] || [[ $(dpkg --get-selections | grep -w "xclip" | awk '{print $1}' | head -1) != xclip ]]; then
 		echo -e "\e[00;31mDebe ejecutar la instalacion antes de continuar.\e[00m"
 		malo
 	fi
