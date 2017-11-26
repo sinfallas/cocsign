@@ -1,4 +1,16 @@
-commit 67f69b7dc06ef8f9d30d7bbf78a83b0155a2d55c (HEAD, origin/master, origin/HEAD, master)
+commit ad8d87a68e08630ed0b5ed6affad6f3a325d6cf8 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Nov 26 12:55:47 2017 -0400
+
+    * se agrega comprobacion con dpkg
+
+commit f5b23fcbd950f425de5ea16281e361806fb8deec (tag: v0.6.6)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 9 10:47:43 2016 -0430
+
+    * changelog
+
+commit 67f69b7dc06ef8f9d30d7bbf78a83b0155a2d55c
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Apr 9 10:47:30 2016 -0430
 
