@@ -1,4 +1,16 @@
-commit ad8d87a68e08630ed0b5ed6affad6f3a325d6cf8 (HEAD, origin/master, origin/HEAD, master)
+commit 9dda958c227cccef3ac938392cf23efde88635bd (HEAD -> master, origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Mar 15 21:05:19 2018 -0400
+
+    * se llama al script securegnupg
+
+commit d9ec301bd4f11e66b37597718068452e77cfd188
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Nov 26 12:56:16 2017 -0400
+
+    * changelog
+
+commit ad8d87a68e08630ed0b5ed6affad6f3a325d6cf8
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Nov 26 12:55:47 2017 -0400
 
