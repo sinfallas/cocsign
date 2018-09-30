@@ -1,4 +1,10 @@
-commit 9dda958c227cccef3ac938392cf23efde88635bd (HEAD -> master, origin/master, origin/HEAD)
+commit 318c6ce229614f151346a34771048d7d7dcf2582 (HEAD -> master, origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Mar 15 21:05:41 2018 -0400
+
+    * changelog
+
+commit 9dda958c227cccef3ac938392cf23efde88635bd
 Author: jose perez <sinfallas@gmail.com>
 Date:   Thu Mar 15 21:05:19 2018 -0400
 
